@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Opening Formaplan App...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function getQueryParam(key) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(key);
+        }
+
+        window.onload = function () {
+            const projectId = getQueryParam("projectId");
+            const captureId = getQueryParam("captureId");
+
+            if (!projectId || !captureId) {
+                document.body.innerHTML = "<h2>Missing projectId or captureId in URL.</h2>";
+                return;
+            }
+
+            const deepLink = `formaplan://project?projectId=${projectId}&captureId=${captureId}`;
+
+            // Auto-open the app
+            window.location.href = deepLink;
+
+            // Fallback after 1.5s if app is not installed
+            setTimeout(function () {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.dsa.formaplan";
+            }, 1500);
+        };
+    </script>
+</head>
+<body>
+    <h2>Opening Formaplan App...</h2>
+    <p>If the app doesn’t open, <a id="manualLink">tap here</a>.</p>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const pid = params.get("projectId");
+        const cid = params.get("captureId");
+
+        if (pid && cid) {
+            document.getElementById("manualLink").href = `formaplan://project?projectId=${pid}&captureId=${cid}`;
+        }
+    </script>
+</body>
+</html>

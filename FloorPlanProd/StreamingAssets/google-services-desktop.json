@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "728044833489",
+    "project_id": "floorplan-70700",
+    "storage_bucket": "floorplan-70700.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728044833489:android:30f866b17cfe81f6da53f0",
+        "android_client_info": {
+          "package_name": "com.DSA.FloorPlan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728044833489-0mgk2u6dsr3ntvn9vef8k3tll09hb9kq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.DSA.FloorPlan",
+            "certificate_hash": "f25d78d968bedec06ee248d3f6d6e12e2ed16015"
+          }
+        },
+        {
+          "client_id": "728044833489-1kmkbnl8fovidccd6c09g83coc7tcti9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9CzLKs1-ChIjSMCt2YXlEIrp92pl2fG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728044833489-1kmkbnl8fovidccd6c09g83coc7tcti9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "728044833489-dk5nrahcoq1rg0r84njo2jk5d060n7f9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.DSA.FloorPlan"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
